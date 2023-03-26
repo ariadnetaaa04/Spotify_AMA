@@ -67,6 +67,14 @@ public class GameManager : MonoBehaviour
         songText.text = songs[currentSong].name;
     }
 
+    public void RestartSong()
+    {
+        _audioSource.clip = songs[currentSong];
+        _audioSource.Play();
+    }
+
+
+
 
 
 
